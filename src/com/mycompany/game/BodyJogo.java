@@ -10,10 +10,6 @@ public class BodyJogo {
 	private List<Perguntas> perguntas;
 	private String resposta; 
 	
-    public String getResposta() {
-        return resposta;
-    }
-	
 	public void jogoPerguntas() {
 		perguntas = new ArrayList<>(); 
 		
@@ -24,14 +20,20 @@ public class BodyJogo {
 		perguntas.add(new Perguntas("O planeta tem vida habitável?", "Sim","Não"));
 	}
 	
-	 public void iniciarJogo() {
-	  Scanner scanner = new Scanner(System.in);
+	
+	public String getResposta() {
+        return resposta;
+    }
+	
+	
+	public void iniciarJogo() {
+	 try(Scanner scanner = new Scanner(System.in)){
 	 
 	  for (Perguntas pergunta : perguntas) {
           pergunta.exibirPergunta();
           System.out.print("Sua resposta: ");
 		String resposta = scanner.nextLine(); 
 	  }
-	  
 	 }
+	}
 }
