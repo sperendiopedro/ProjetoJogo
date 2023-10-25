@@ -2,7 +2,7 @@ package com.mycompany.game;
 import java.util.Scanner;
 
 public class Perguntas{
-	private String pergunta; 
+	private String perguntas; 
 	private String opA;
     private String opB;
     private String opC;
@@ -10,8 +10,8 @@ public class Perguntas{
     public String resposta; 
    
     
-    public Perguntas(String pergunta, String opA, String opB, String opC, String opD, String resposta) {
-        this.pergunta = pergunta;
+    public Perguntas(String perguntas, String opA, String opB, String opC, String opD, String resposta) {
+        this.perguntas = perguntas;
         this.opA = opA;
         this.opB = opB;
         this.opC = opC; 
@@ -20,23 +20,25 @@ public class Perguntas{
     
     }
      
-    public Perguntas(String pergunta, String opA, String opB, String resposta ) {	  
-        this.opA = opA;
+    public Perguntas(String perguntas, String opA, String opB, String resposta ) {	  
+        this.perguntas = "";
+    	this.opA = opA;
         this.opB = opB;
     }
     
-    public Perguntas(String pergunta, String opA, String opB) {	  
-        this.opA = opA;
+    public Perguntas(String perguntas, String opA, String opB) {	  
+        this.perguntas = "";
+    	this.opA = opA;
         this.opB = opB;
     }
 	
 	
     public String getPergunta(){
-        return pergunta;
+        return perguntas;
     }
 
     public void exibirPergunta() {
-            System.out.println(this.pergunta);
+            System.out.println(this.perguntas);
             System.out.println("a) " + this.opA);
             System.out.println("b) " + this.opB);
             System.out.println("c) " + this.opC);

@@ -3,8 +3,7 @@ package com.mycompany.game;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-import java.util.Random;
+import java.util.Scanner; 
 
 
 
@@ -13,30 +12,27 @@ public class BodyJogo{
 	private List<String> respostas; 
 	
 	public void jogoPerguntas() {
+		
+		
 		Planetas planeta1 = new Planetas("Terra", "a", "b", "a", "a", "a"); 
 		Planetas planeta2 = new Planetas("Marte", "c", "c", "a", "d", "c");
 		
-		
-		
-		
-		perguntas = new ArrayList<>(); 
-		perguntas.add(new Perguntas("Qual é a cor do planeta?", "Azul", "Verde", "Vermelho"));
-		perguntas.add(new Perguntas("O planeta é quente?", "Sim", "Não", "Relativamente"));
-		perguntas.add(new Perguntas("Qual o estado físico do planeta?", "Rochoso", "Gasoso"));
-		perguntas.add(new Perguntas("Quantas luas tem esse planeta?", "1", "79", "2", "Nenhuma", null));
-		perguntas.add(new Perguntas("O planeta tem vida habitável?", "Sim","Não", "Futuramente talvez"));
+		this.perguntas = new ArrayList<>(); 
+		this.perguntas.add(new Perguntas("Qual é a cor do planeta?", "Azul", "Verde", "Vermelho"));
+		this.perguntas.add(new Perguntas("O planeta é quente?", "Sim", "Não", "Relativamente"));
+		this.perguntas.add(new Perguntas("Qual o estado físico do planeta?", "Rochoso", "Gasoso"));
+		this.perguntas.add(new Perguntas("Quantas luas tem esse planeta?", "1", "79", "2", "Nenhuma","teste"));
+		this.perguntas.add(new Perguntas("O planeta tem vida habitável?", "Sim","Não", "Futuramente talvez"));
 	}
 	
 	
 	public void iniciarJogo() {
-	 try(Scanner scanner = new Scanner(System.in)){
-	 
-	  for (Perguntas pergunta : perguntas) {
-          pergunta.exibirPergunta();
+	 Scanner scanner = new Scanner(System.in); 
+	  for (Perguntas perguntas : this.perguntas) {
+          perguntas.exibirPergunta();
           System.out.print("Sua resposta: ");
-          this.respostas.add(pergunta.obterResposta());
+          this.respostas.add(perguntas.obterResposta());
 	  }
-	 }
 	}
 
 
