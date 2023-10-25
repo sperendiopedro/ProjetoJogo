@@ -13,7 +13,7 @@ public class Planetas {
 		this.nome = nome;
 		this.cor = cor; 
 		this.temp = temp; 
-		this.ef = ef; 
+		this.ef = ef;
 		this.luas = luas;
 		this.vida = vida; 
 	}

@@ -49,11 +49,11 @@ public class Perguntas{
             return resposta;
     }
 
-        
-	public String obterResposta(){
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Resposta: ");
-    this.resposta = scanner.nextLine();
+  	public String obterResposta()
+  	{
+    
+  
     return this.resposta;
-	}
+	
+  	}
 } 
