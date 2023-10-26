@@ -10,50 +10,56 @@ public class Perguntas{
     public String resposta; 
    
     
-    public Perguntas(String perguntas, String opA, String opB, String opC, String opD, String resposta) {
-        this.perguntas = perguntas;
+
+    public Perguntas(String pergunta, String opA, String opB, String opC, String opD) {
+        this.perguntas = pergunta;
         this.opA = opA;
         this.opB = opB;
-        this.opC = opC; 
+        this.opC = opC;
         this.opD = opD;
-        this.resposta = ""; 
-    
-    }
-     
-    public Perguntas(String perguntas, String opA, String opB, String resposta ) {	  
-        this.perguntas = "";
-    	this.opA = opA;
-        this.opB = opB;
+        this.resposta = "";
     }
     
-    public Perguntas(String perguntas, String opA, String opB) {	  
-        this.perguntas = "";
-    	this.opA = opA;
+
+    public Perguntas(String pergunta, String opA, String opB, String opC) {
+        this.perguntas = pergunta;
+        this.opA = opA;
         this.opB = opB;
+        this.opC = opC;
+        this.opD = "";
+        this.resposta = "";
     }
-	
+    
+    public Perguntas(String pergunta, String opA, String opB) {
+        this.perguntas = pergunta;
+        this.opA = opA;
+        this.opB = opB;
+        this.opC = "";
+        this.opD = "";
+        this.resposta = "";
+    }
 	
     public String getPergunta(){
         return perguntas;
     }
 
-    public void exibirPergunta() {
-            System.out.println(this.perguntas);
-            System.out.println("a) " + this.opA);
-            System.out.println("b) " + this.opB);
-            System.out.println("c) " + this.opC);
-            System.out.println("d) " + this.opD); 
+    public void exibirPergunta(){
+        System.out.println(this.perguntas);
+        System.out.println("a) " + this.opA);
+        System.out.println("b) " + this.opB);
+        if(this.opC.compareTo("") != 0 ) {
+        	System.out.println("c) " + this.opC);
+        }
+        if(this.opD.compareTo("") != 0){
+            System.out.println("d) " +this.opD);
+        }
     }
-
-    public String getResposta() {
-            return resposta;
-    }
-
-  	public String obterResposta()
-  	{
     
-  
-    return this.resposta;
-	
-  	}
+    public String obterResposta(){
+        System.out.print("Resposta: ");
+        Scanner scanner = new Scanner(System.in);
+        this.resposta = scanner.nextLine().toLowerCase();
+        return this.resposta;
+    }
 } 
+
