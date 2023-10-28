@@ -46,9 +46,9 @@ public class Teste extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton = new JButton("Iniciar !");
-		btnNewButton.setBounds(206, 194, 169, 21);
-		contentPane.add(btnNewButton);
+		JButton openFrameButton = new JButton("Iniciar !");
+		openFrameButton.setBounds(206, 194, 169, 21);
+		
 		
 		JLabel lblNewLabel = new JLabel("Clique para iniciar o jogo!");
 		lblNewLabel.setForeground(new Color(255, 255, 255));
