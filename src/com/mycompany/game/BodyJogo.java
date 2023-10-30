@@ -19,7 +19,7 @@ public class BodyJogo{
 		this.perguntas = new ArrayList<>(); 
 		this.perguntas.add(new Perguntas("Qual é a cor do planeta?", "Azul", "Tons claros", "Bege", "Vermelho"));
 		this.perguntas.add(new Perguntas("\nO planeta é quente?", "Sim", "Não", "Relativamente"));
-		this.perguntas.add(new Perguntas("\nQual o estado físico do planeta?", "Rochoso", "Gasoso"));
+		this.perguntas.add(new Perguntas("\nQual o estado físico do planeta?", "Rochoso", "Gasoso", null));
 		this.perguntas.add(new Perguntas("\nQuantas luas tem esse planeta?", "1", "79", "2", "Nenhuma"));
 		this.perguntas.add(new Perguntas("\nO planeta tem vida habitável?", "Sim","Não", "talvez futuramente")); 
 		
