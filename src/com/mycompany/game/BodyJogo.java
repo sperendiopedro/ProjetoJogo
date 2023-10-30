@@ -54,7 +54,6 @@ public class BodyJogo{
 		//if(vencedor.obterPlaneta(respostas) < planeta5.obterPlaneta(respostas)) vencedor = planeta5; 
 		//if(vencedor.obterPlaneta(respostas) < planeta6.obterPlaneta(respostas)) vencedor = planeta6; 
 		//if(vencedor.obterPlaneta(respostas) < planeta7.obterPlaneta(respostas)) vencedor = planeta7; 
-		
 		return vencedor;
 		
 	}
