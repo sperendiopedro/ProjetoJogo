@@ -39,7 +39,11 @@ public class Perguntas{
         this.resposta = "";
     }
 	
-    public String getPergunta(){
+    public Perguntas() {
+	}
+
+
+	public String getPergunta(){
         return perguntas;
     }
 
