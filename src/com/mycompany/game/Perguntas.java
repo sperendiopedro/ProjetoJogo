@@ -47,7 +47,7 @@ public class Perguntas{
         return perguntas;
     }
 
-    public void exibirPergunta(){
+    public String exibirPergunta(){
         System.out.println(this.perguntas);
         System.out.println("a) " + this.opA);
         System.out.println("b) " + this.opB);
@@ -57,6 +57,8 @@ public class Perguntas{
         if(this.opD.compareTo("") != 0){
             System.out.println("d) " +this.opD);
         }
+        
+        return perguntas;
     }
     
     public String obterResposta(){

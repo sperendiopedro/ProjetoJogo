@@ -45,6 +45,7 @@ public class Teste extends JFrame {
 	 * Create the frame.
 	 */
 	public Teste() {
+		setTitle("Menu Iniciar"); 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(500, 200, 600, 500); //first two number are the location, the last two numbers are the size.
 		contentPane = new JPanel();
