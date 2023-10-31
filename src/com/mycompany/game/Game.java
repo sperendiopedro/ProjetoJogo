@@ -53,7 +53,7 @@ public class Game extends JFrame {
 		JTextArea textArea = new JTextArea();
 		textArea.setBounds(168, 31, 236, 197);
 		textArea.setText(p1.getPergunta());
-		
+		 
 		contentPane.add(textArea);
 		
 	}
