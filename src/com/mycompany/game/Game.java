@@ -253,23 +253,16 @@ public class Game extends JFrame {
 	            	contentPane.revalidate();
 	            	contentPane.repaint();
 	            	
-	            	JLabel lblMercurio = new JLabel("Essa ficou fácil !");
+	            	JLabel lblMercurio = new JLabel("Esse ficou fácil !");
 	            	lblMercurio.setFont(new Font("Tahoma", Font.BOLD, 21));
 	        		lblMercurio.setForeground(new Color(255, 255, 255));
 	        		lblMercurio.setBounds(50, 60, 505, 30);
 	        		lblMercurio.setVisible(true) ;
 	        		contentPane.add(lblMercurio);
 	        		
-	        		JLabel lblMercurio1 = new JLabel("O seu planeta é: ");
-	        		lblMercurio1.setFont(new Font("Tahoma", Font.BOLD, 15));
-	        		lblMercurio1.setForeground(new Color(255, 255, 255));
-	        		lblMercurio1.setBounds(50, 95, 505, 30);
-	        		lblMercurio1.setVisible(true) ;
-	        		contentPane.add(lblMercurio);
-	        		
 	        		JLabel lblNewLabel = new JLabel("");
 	        		lblNewLabel.setIcon(new ImageIcon("C:\\EclipseWorkspace\\ProjetoJogo\\Imagens\\Mercurio.jpg"));
-	        		lblNewLabel.setBounds(138, 120, 302, 273);
+	        		lblNewLabel.setBounds(145, 120, 302, 273);
 	        		contentPane.add(lblNewLabel);;
 	        		
 
