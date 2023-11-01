@@ -83,6 +83,7 @@ public class Teste extends JFrame {
 			public void actionPerformed(ActionEvent e) { 
 				Game g1 = new Game(); 
 				g1.setVisible(true);
+				Teste.this.dispose();
 
 			} 
 		});
