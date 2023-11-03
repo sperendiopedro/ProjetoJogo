@@ -68,13 +68,13 @@ public class Teste extends JFrame {
 		txtInstrucoes.setForeground(Color.WHITE);
 		txtInstrucoes.setFont(new Font("Tahoma", Font.BOLD, 20));
 		txtInstrucoes.setBackground(Color.BLACK);
-		txtInstrucoes.setBounds(11, 144, 566, 74);
+		txtInstrucoes.setBounds(11, 142, 566, 56);
 		contentPane.add(txtInstrucoes);
 		
-		JLabel lblinicio2 = new JLabel("Clique para continuar:");
+		JLabel lblinicio2 = new JLabel("Clique para iniciar:");
 		lblinicio2.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblinicio2.setForeground(new Color(255, 255, 255));
-		lblinicio2.setBounds(233, 250, 122, 13);
+		lblinicio2.setBounds(247, 258, 104, 13);
 		contentPane.add(lblinicio2); 
 		
 		JButton btnIniciar = new JButton("Iniciar");
@@ -88,8 +88,18 @@ public class Teste extends JFrame {
 			} 
 		});
 		btnIniciar.setFont(new Font("Tahoma", Font.BOLD, 10));
-		btnIniciar.setBounds(252, 273, 85, 21);
+		btnIniciar.setBounds(252, 279, 85, 21);
 		contentPane.add(btnIniciar);
+		
+		JTextPane txtpnPsJogueCom = new JTextPane();
+		txtpnPsJogueCom.setText("PS: Jogue com bastante atenção pq n tem botão pra voltar nas perguntas, só nos resultados (n deu tempo)");
+		txtpnPsJogueCom.setForeground(Color.WHITE);
+		txtpnPsJogueCom.setFont(new Font("Tahoma", Font.BOLD, 9));
+		txtpnPsJogueCom.setEnabled(true);
+		txtpnPsJogueCom.setEditable(false);
+		txtpnPsJogueCom.setBackground(Color.BLACK);
+		txtpnPsJogueCom.setBounds(43, 219, 535, 34);
+		contentPane.add(txtpnPsJogueCom);
 		
 		
 	}
